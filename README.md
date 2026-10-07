@@ -13,7 +13,7 @@
 
 Você pode testar e utilizar as ferramentas diretamente no seu navegador, sem precisar instalar nada:
 
-👉 **[Acessar o DevTools Online](https://lucasreisd.github.io/dev-tools/)**
+👉 **[Acessar o DevTools Online](https://lucasreisd.github.io/Dev-tools/)**
 
 ---
 
