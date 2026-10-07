@@ -1,45 +1,52 @@
-# DevTools
+# 🛠️ DevTools
 
-## Random Utility Suite
+> Coleção de ferramentas e utilitários essenciais para otimizar o fluxo de trabalho de desenvolvimento diário.
 
-**Pequenas ferramentas. Grandes atalhos.**
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge&logo=githubpages)](https://lucasreisd.github.io/dev-tools/)
+![License](https://img.shields.io/github/license/LucasReisD/dev-tools?style=flat-square)
+![Stars](https://img.shields.io/github/stars/LucasReisD/dev-tools?style=flat-square)
+![Forks](https://img.shields.io/github/forks/LucasReisD/dev-tools?style=flat-square)
 
-DevTools é uma coleção client-side de ferramentas para geração de dados, tokens, identificadores e valores aleatórios voltada para suporte técnico, desenvolvimento, infraestrutura e testes de software.
+---
 
-## Features
+## 🌐 Acesso Rápido (Live Demo)
 
-- Random Number com intervalo, quantidade e valores únicos
-- Password Generator com indicador de força
-- UUID v4 Generator
-- Hash Generator com SHA-256 e SHA-512
-- Random String Generator
-- Test Data Generator com dados claramente fictícios
-- Histórico local (senhas não são salvas)
-- Tema dark/light persistente
-- Interface responsiva e acessível
+Você pode testar e utilizar as ferramentas diretamente no seu navegador, sem precisar instalar nada:
 
-## Tecnologias
+👉 **[Acessar o DevTools Online](https://lucasreisd.github.io/dev-tools/)**
 
-- HTML5
-- CSS3
-- JavaScript (ES Modules)
-- Web Crypto API
-- LocalStorage
+---
 
-## Uso
+## 📌 Sobre o Projeto
 
-Clone o repositório e abra o arquivo `index.html` no navegador. Para uma experiência de desenvolvimento melhor, execute um servidor estático na pasta do projeto:
+O **DevTools** foi criado para agilizar tarefas repetitivas do dia a dia de desenvolvimento, centralizando pequenos utilitários, geradores e formatadores em uma única interface simples e rápida.
 
-```bash
-git clone https://github.com/LucasReisD/gerador-aleatorio.git
-cd gerador-aleatorio
-python3 -m http.server 8080
-```
+### ✨ Funcionalidades
 
-Depois, acesse `http://localhost:8080`.
+- ⚡ **Conversão e Formatação:** Formatadores de JSON, leitores e conversores de dados.
+- 🔑 **Geradores Utilitários:** Gerador de hashes, UUIDs e dados de teste.
+- 🎨 **Interface Intuitiva:** Design limpo e focado na produtividade.
+- 🚀 **Zero Instalação:** Funciona direto no navegador via GitHub Pages.
 
-## Segurança e privacidade
+---
 
-Todos os dados são processados localmente no navegador. Não há backend, coleta de dados ou envio automático de conteúdo para servidores. Senhas e strings sensíveis usam `crypto.getRandomValues()`; senhas não são gravadas no histórico nem em `localStorage`.
+## 🛠️ Tecnologias Utilizadas
 
-O Hash Generator usa a Web Crypto API para SHA-256 e SHA-512. MD5 não está disponível por ser um algoritmo criptograficamente obsoleto.
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Hospedagem:** GitHub Pages
+
+---
+
+## 🚀 Como Executar Localmente
+
+Caso queira rodar o projeto na sua máquina ou contribuir com melhorias:
+
+### Pré-requisitos
+- [Git](https://git-scm.com)
+- Um navegador web atualizado (Chrome, Firefox, Edge, etc.)
+
+### Passo a passo
+
+1. **Clone este repositório:**
+   ```bash
+   git clone [https://github.com/LucasReisD/dev-tools.git](https://github.com/LucasReisD/dev-tools.git)
