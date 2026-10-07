@@ -1,45 +1,45 @@
-# Gerador de Número Aleatório 🎲
+# DevTools
 
-Um gerador de números aleatórios simples e eficiente, desenvolvido com HTML, CSS e JavaScript.
+## Random Utility Suite
 
-## ✨ Funcionalidades
+**Pequenas ferramentas. Grandes atalhos.**
 
-- ✅ Geração de números aleatórios dentro de um intervalo personalizado
-- ✅ Interface limpa, moderna e intuitiva  
-- ✅ Design responsivo para mobile e desktop
-- ✅ Fácil de usar e configurar
+DevTools é uma coleção client-side de ferramentas para geração de dados, tokens, identificadores e valores aleatórios voltada para suporte técnico, desenvolvimento, infraestrutura e testes de software.
 
-## 🚀 Como usar
+## Features
 
-1. **Gere o número:**
-   - Clique no botão "Gerar Número"
+- Random Number com intervalo, quantidade e valores únicos
+- Password Generator com indicador de força
+- UUID v4 Generator
+- Hash Generator com SHA-256 e SHA-512
+- Random String Generator
+- Test Data Generator com dados claramente fictícios
+- Histórico local (senhas não são salvas)
+- Tema dark/light persistente
+- Interface responsiva e acessível
 
-2. **Veja o resultado:**
-   - O número aleatório será exibido na seção de resultado
+## Tecnologias
 
-## 🛠️ Tecnologias utilizadas
+- HTML5
+- CSS3
+- JavaScript (ES Modules)
+- Web Crypto API
+- LocalStorage
 
-- **HTML5** - Estrutura do projeto
-- **CSS3** - Estilização e design responsivo
-- **JavaScript** - Lógica e interatividade
+## Uso
 
+Clone o repositório e abra o arquivo `index.html` no navegador. Para uma experiência de desenvolvimento melhor, execute um servidor estático na pasta do projeto:
 
-## 🌐 Acesse o projeto
+```bash
+git clone https://github.com/LucasReisD/gerador-aleatorio.git
+cd gerador-aleatorio
+python3 -m http.server 8080
+```
 
-Você pode visualizar o projeto funcionando através do GitHub Pages:
-🔗 **[https://lucasreisd.github.io/gerador-aleatorio/](https://lucasreisd.github.io/gerador-aleatorio/)**
+Depois, acesse `http://localhost:8080`.
 
-## 📝 Licença
+## Segurança e privacidade
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Todos os dados são processados localmente no navegador. Não há backend, coleta de dados ou envio automático de conteúdo para servidores. Senhas e strings sensíveis usam `crypto.getRandomValues()`; senhas não são gravadas no histórico nem em `localStorage`.
 
-## 👨‍💻 Desenvolvido por
-
-**Lucas Reis**  
-- 📧 Email: lucassampaio360x@gmail.com
-- 💼 LinkedIn: [Lucas Reis](https://www.linkedin.com/in/LucasReisD)
-- 🐙 GitHub: [@LucasReisD](https://github.com/LucasReisD)  
-
----
-
-⭐ Se este projeto foi útil para você, deixe uma estrela no repositório!
+O Hash Generator usa a Web Crypto API para SHA-256 e SHA-512. MD5 não está disponível por ser um algoritmo criptograficamente obsoleto.

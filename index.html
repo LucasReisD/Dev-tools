@@ -1,23 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Gerador de numero aleátorio</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Clique no botão para gerar um número aleatório</h1>
-    <div class="number-display" id="numberDisplay">-</div>
-     <button class="generate-btn" onclick="generateRandomNumber()">Gerar Número</button>
-
-    <div class="footer">
-            Números entre 1 e 10
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ferramentas rápidas para suporte técnico, desenvolvimento, infraestrutura e testes de software." />
+    <meta name="theme-color" content="#0B0D0F" />
+    <meta property="og:title" content="DevTools — Random Utility Suite" />
+    <meta property="og:description" content="Ferramentas rápidas para suporte técnico, desenvolvimento, infraestrutura e testes de software." />
+    <meta property="og:type" content="website" />
+    <title>DevTools — Random Utility Suite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Navegação principal">
+        <a class="brand" href="#home" aria-label="DevTools, início"><span aria-hidden="true">◈</span> DEVTOOLS</a>
+        <button class="menu-toggle icon-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+        <div class="nav-links" id="nav-links">
+          <a href="#tools">Tools</a><a href="#docs">Docs</a>
+          <a href="https://github.com/LucasReisD" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <button class="theme-toggle" type="button" aria-label="Alternar tema"><span aria-hidden="true">◐</span> <span class="theme-label">Theme</span></button>
         </div>
-    </div>
-
-</body>
-<script src="script.js"></script>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="hero shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy"><p class="eyebrow">RANDOM UTILITY SUITE</p><h1 id="hero-title">Ferramentas rápidas para quem trabalha com tecnologia.</h1><p class="lead">Gere dados, tokens, senhas e valores aleatórios para suporte técnico, desenvolvimento e testes.</p><div class="hero-actions"><a class="button primary" href="#tools">Abrir ferramentas <span aria-hidden="true">↓</span></a><a class="button secondary" href="https://github.com/LucasReisD" target="_blank" rel="noopener noreferrer">Ver no GitHub <span aria-hidden="true">↗</span></a></div></div>
+        <aside class="preview-card" aria-label="Prévia do gerador de número aleatório"><div class="card-label"><span class="status-dot"></span> RANDOM NUMBER</div><output class="preview-result" id="previewResult">0847</output><button class="button primary full-width" type="button" id="previewGenerate">Generate number</button></aside>
+      </section>
+      <section class="tools-section shell" id="tools" aria-labelledby="tools-title"><div class="section-heading"><div><p class="eyebrow">TOOLS</p><h2 id="tools-title">Uma suíte pequena, pronta para o trabalho.</h2></div><p>Escolha uma ferramenta e gere tudo localmente no seu navegador.</p></div><div class="tool-grid" id="toolGrid"></div></section>
+      <section class="workspace shell" id="workspace" aria-live="polite" aria-label="Área de ferramentas"></section>
+      <section class="docs shell" id="docs" aria-labelledby="docs-title"><p class="eyebrow">LOCAL-FIRST</p><h2 id="docs-title">Sem conta. Sem servidor. Sem dados enviados.</h2><p>As ferramentas processam suas entradas no navegador. Senhas nunca entram no histórico e os valores recentes ficam somente neste dispositivo.</p></section>
+    </main>
+    <footer class="site-footer shell"><span>◈ DEVTOOLS</span><span>Pequenas ferramentas. Grandes atalhos.</span></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
